@@ -9,3 +9,6 @@ elif write_number > 0: # check if the give number is greater than zero
 else: # if it is not equal to zero and not greater than zero, then it is a negative number
     print(f"{write_number} is a negative number")
 
+# Part two: creating a loop with for to count numbers from one to ten.
+for numbers in range(1 , 11):
+    print (numbers)
