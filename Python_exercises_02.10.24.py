@@ -1,10 +1,10 @@
 # Part one: using if, elif and else to compare the numbers
 
 # #asking the user to write a number
-write_number = int(input("Please type a number: "))
+write_number = int(input("For the comparison, enter a number: "))
 # check if it is positive or negative or zero
 if write_number == 0: # check if the given number is equal to zero
-    print(f"{write_number} is a null")
+    print(f"{write_number} is zero")
 elif write_number > 0: # check if the give number is greater than zero
     print(f"{write_number} is a postive number")
 else: # if it is not equal to zero and not greater than zero, then it is a negative number
@@ -19,11 +19,22 @@ for numbers in range(1 , 11):
 # Part three: using while-loop to check even or odd numbers.
 
 # ask the user to give an input
-zahl = int(input("Please type a number"))
+zahl = int(input("Please enter a number: "))
 # check if the result of given number divided by two is zero, then print... 
 # when the given number divided by two is not zero, then it ask the user to type another number
 while zahl % 2 != 0:
     zahl = int(input("The number is odd, please enter an even number: "))
-print(f"The number {zahl} is an even number.")
+print(f"Congrats, you have entered an even number.")
 
 
+# Part four: using def and return to calculate the sum of squares
+
+def sum_of_squares (a, b):
+    return a**2 + b**2
+
+# Getting user input for a and b
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+
+result = sum_of_squares(a, b)
+print(f"The sum of squares is {result}")
