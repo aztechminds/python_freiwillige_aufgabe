@@ -1,7 +1,8 @@
-# Part one: using if, elif and else to compare the numbers
+# %% Part one: using if, elif and else to compare the numbers
 
-# #asking the user to write a number
-write_number = int(input("For the comparison, enter a number: "))
+#asking the user to write a number
+print("Here you can check if the entered number is a negative, postive or a zero number, don't believe me, try it!!!")
+write_number = int(input("enter a number, I will tell you the result: "))
 # check if it is positive or negative or zero
 if write_number == 0: # check if the given number is equal to zero
     print(f"{write_number} is zero")
@@ -11,12 +12,12 @@ else: # if it is not equal to zero and not greater than zero, then it is a negat
     print(f"{write_number} is a negative number")
 
 
-# Part two: using for-loop to count numbers from one to ten.
+# %% Part two: using for-loop to count numbers from one to ten.
 for numbers in range(1 , 11):
     print (numbers)
 
 
-# Part three: using while-loop to check even or odd numbers.
+# %% Part three: using while-loop to check even or odd numbers.
 
 # ask the user to give an input
 zahl = int(input("Please enter a number: "))
@@ -27,7 +28,7 @@ while zahl % 2 != 0:
 print(f"Congrats, you have entered an even number.")
 
 
-# Part four: using def and return to calculate the sum of squares
+# %% Part four: using def and return to calculate the sum of squares
 
 def sum_of_squares (a, b):
     return a**2 + b**2
@@ -38,3 +39,19 @@ b = int(input("Enter the second number: "))
 
 result = sum_of_squares(a, b)
 print(f"The sum of squares is {result}")
+
+
+# %% Part 5: Extra FizzBuzz
+
+for zahl in range(1, 100):
+    if zahl % 3 == 0 and zahl % 5 == 0:
+        print("FizzBuzz")
+    elif zahl %3 == 0:
+        print("Fizz")
+    elif zahl %5 == 0:
+        print("Buzz")
+    else: 
+        print (zahl)
+
+print ("\nThank for using this program :)")
+# %%
